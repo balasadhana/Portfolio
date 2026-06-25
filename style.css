@@ -5090,4 +5090,110 @@ footer:hover .footer-divider-line {
     font-size: 1.4rem;
   }
 }
-
+
+/* ============================================
+   CRITICAL MOBILE FIX v2
+   - Disable backdrop-filter (causes dark/blur on mobile)
+   - Fix bento card backgrounds to solid colors
+   - Fix text overflow in about section
+   ============================================ */
+@media (max-width: 992px) {
+
+  /* ---- Disable ALL backdrop-filter on mobile ---- */
+  /* backdrop-filter causes extreme darkness + blur on mobile browsers */
+  .bento-card,
+  .tech-console-card,
+  .contact-form-side,
+  .bento-resume-container,
+  .internship-inner-card,
+  .education-inner-card,
+  .header-nav,
+  .premium-card-face {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* ---- Solid backgrounds for cards ---- */
+  .bento-card {
+    background: #0d1017 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+  }
+
+  .bento-resume-container {
+    background: #0a0d14 !important;
+    border-color: rgba(109, 52, 228, 0.5) !important;
+  }
+
+  .tech-console-card {
+    background: #0d1017 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .internship-inner-card,
+  .education-inner-card {
+    background: #10131e !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .contact-form-side {
+    background: #0a0d14 !important;
+  }
+
+  .premium-card-face {
+    background: #0d1017 !important;
+  }
+
+  /* ---- Fix all card text to be bright & visible ---- */
+  .bento-card-title,
+  .bento-profile-name,
+  .internship-inner-card h3,
+  .education-inner-card h3,
+  .tech-console-title {
+    color: #ffffff !important;
+  }
+
+  .bento-card-company,
+  .bento-profile-role {
+    color: #c084fc !important;
+  }
+
+  .bento-card-desc,
+  .bento-info-list li,
+  .bento-card-category,
+  .tech-console-subtitle {
+    color: #94a3b8 !important;
+  }
+
+  .bento-skill-badge,
+  .bento-tech-pill {
+    color: #e2e8f0 !important;
+    background: rgba(137, 90, 245, 0.15) !important;
+    border-color: rgba(137, 90, 245, 0.3) !important;
+  }
+
+  /* ---- Fix About section text overflow ---- */
+  .about-sections-grid {
+    overflow: hidden;
+  }
+
+  .about-intro-col {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .about-body-text {
+    color: #cbd5e1 !important;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* ---- Fix nav header ---- */
+  .header-nav {
+    background: rgba(13, 15, 20, 0.98) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+}
