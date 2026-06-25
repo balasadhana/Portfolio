@@ -522,15 +522,13 @@ function initHeroScrollParallax() {
   heroRight.addEventListener('animationend', () => handleAnimationEnd(heroRight));
 
   window.addEventListener('scroll', () => {
-    // ── MOBILE: disable hero parallax ──
+    // ── MOBILE: disable parallax, keep hero visible ──
     if (window.innerWidth < 992) {
-      // Explicitly set visible — empty string would revert to CSS opacity:0
-      heroLeft.style.transform = 'translateX(0)';
+      // After mobile-fade-up animation, ensure hero stays visible
       heroLeft.style.opacity = '1';
-      heroLeft.style.animation = 'none';
-      heroRight.style.transform = 'translateX(0)';
+      heroLeft.style.transform = 'translateX(0)';
       heroRight.style.opacity = '1';
-      heroRight.style.animation = 'none';
+      heroRight.style.transform = 'translateX(0)';
       return;
     }
 

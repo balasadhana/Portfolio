@@ -5451,22 +5451,110 @@ footer:hover .footer-divider-line {
   }
 }
 
-/* ─────────────────────────────────────────────
-   MOBILE: Hero instantly visible (no animation)
-   Prevents blank screen when returning to top
-   ───────────────────────────────────────────── */
+/* ══════════════════════════════════════════════
+   MOBILE ANIMATIONS — Smooth Fade + Slide Up
+   No translateX (overflow), No blur (dark cards)
+   ══════════════════════════════════════════════ */
+
+/* Mobile-friendly keyframes */
+@keyframes mobile-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobile-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @media (max-width: 992px) {
-  .hero-reveal-left,
-  .hero-reveal-right {
-    opacity: 1 !important;
-    transform: translateX(0) !important;
-    animation: none !important;
+
+  /* ── Hero: fade+slide-up instead of slide-left/right ── */
+  .hero-reveal-left {
+    opacity: 0;
+    transform: translateY(0) !important; /* override CSS translateX */
+    animation: mobile-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation-delay: 0.1s !important;
   }
 
+  .hero-reveal-right {
+    opacity: 0;
+    transform: translateY(0) !important;
+    animation: mobile-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation-delay: 0.25s !important;
+  }
+
+  /* Nav: simple fade-in drop */
   .nav-reveal-top {
+    opacity: 0;
+    animation: mobile-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation-delay: 0.05s !important;
+    transform: translateX(-50%) !important; /* keep horizontal center */
+  }
+
+  /* ── About section: fade+slide-up ── */
+  .about-intro-col.scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px) !important;
+    transition: opacity 0.7s ease, transform 0.7s ease !important;
+  }
+
+  .about-intro-col.scroll-reveal.reveal-visible {
     opacity: 1 !important;
-    transform: translateX(-50%) !important;
-    animation: none !important;
+    transform: translateY(0) !important;
+  }
+
+  /* ── Profile card (bento-resume-container): fade+slide-up ── */
+  .bento-resume-container.scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px) !important;
+    transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s !important;
+  }
+
+  .bento-resume-container.scroll-reveal.reveal-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  /* ── All other scroll-reveal elements: fade+slide-up ── */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px) !important;
+    transition: opacity 0.6s ease, transform 0.6s ease !important;
+  }
+
+  .scroll-reveal.reveal-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  /* ── Inner cards: staggered fade-up ── */
+  .internship-inner-card:first-child,
+  .education-inner-card:first-child {
+    opacity: 0;
+    transform: translateY(20px) !important;
+    transition: opacity 0.6s ease 0s, transform 0.6s ease 0s !important;
+  }
+
+  .internship-inner-card:last-child,
+  .education-inner-card:last-child {
+    opacity: 0;
+    transform: translateY(20px) !important;
+    transition: opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s !important;
+  }
+
+  .reveal-visible .internship-inner-card:first-child,
+  .reveal-visible .internship-inner-card:last-child,
+  .reveal-visible .education-inner-card:first-child,
+  .reveal-visible .education-inner-card:last-child {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
 
