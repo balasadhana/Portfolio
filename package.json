@@ -1,0 +1,22 @@
+{
+  "name": "sadhana-b-portfolio",
+  "version": "1.0.0",
+  "description": "Premium MERN Full Stack Developer Portfolio for Sadhana B",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000 -c-1",
+    "start": "http-server -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "mern",
+    "full-stack",
+    "developer",
+    "developer-portfolio"
+  ],
+  "author": "Sadhana B",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

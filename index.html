@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- --- SEO Optimization Headers --- -->
+  <title>Sadhana B | MERN Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Sadhana B, a MERN Stack Developer specializing in React, Node.js, Express, MongoDB, and Python AI integrations.">
+  <meta name="keywords"
+    content="MERN stack, Full Stack Developer, Sadhana B, React, Node.js, Express, MongoDB, Portfolio, Web Developer India, SaaS Developer">
+  <meta name="author" content="Sadhana B">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/balasadhana">
+  <meta property="og:title" content="Sadhana B | MERN Full-Stack Developer Portfolio">
+  <meta property="og:description"
+    content="MERN Full-Stack Developer building high-performance, scalable web applications, demand forecasting tools, and career dashboards.">
+  <meta property="og:image" content="https://github.com/balasadhana/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Sadhana B | MERN Full-Stack Developer Portfolio">
+  <meta property="twitter:description"
+    content="MERN Full-Stack Developer building high-performance, scalable web applications.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- JSON-LD Schema Markup for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sadhana B",
+    "jobTitle": "MERN Stack Developer",
+    "url": "https://github.com/balasadhana",
+    "sameAs": [
+      "https://github.com/balasadhana",
+      "https://www.linkedin.com/in/sadhana-b-57a847283/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- --- Sticky Floating Navigation --- -->
+  <nav class="header-nav nav-reveal-top" id="main-nav" aria-label="Main Navigation">
+    <ul class="nav-links-list" role="menubar">
+      <li class="nav-link-item active" role="none">
+        <a href="#home" role="menuitem">Home</a>
+      </li>
+      <li class="nav-link-item" role="none">
+        <a href="#about" role="menuitem">About</a>
+      </li>
+      <li class="nav-link-item" role="none">
+        <a href="#projects" role="menuitem">Projects</a>
+      </li>
+    </ul>
+    <div class="nav-divider"></div>
+    <a href="#contact" class="btn btn-primary btn-hide-mobile" id="nav-contact-btn" role="menuitem">
+      Contact
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+    </a>
+  </nav>
+
+  <!-- --- Hero / Intro Section --- -->
+  <header class="container" id="home">
+    <div class="hero-layout">
+      <!-- Left Column: Bio Info -->
+      <div class="hero-left hero-reveal-left">
+        <div class="hero-badges-row">
+          <div class="hero-badge-pill">
+            <span class="hero-badge-dot"></span>
+            Open to opportunities
+          </div>
+          <div class="hero-badge-pill">MERN STACK</div>
+        </div>
+        <h1 class="hero-title">
+          Sadhana B<br>
+          <span class="text-gradient" style="font-size: 0.7em;">MERN Stack Developer</span>
+        </h1>
+        <p class="hero-subtitle">
+          Building scalable full-stack applications with MERN, real-time systems, and AI-powered workflows. Experienced
+          in developing production-style dashboards, REST APIs, authentication systems, and data-driven web applications
+          through internship projects and hands-on development.
+        </p>
+
+        <div class="hero-stats-row" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+          <div class="hero-stat-badge"
+            style="background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); padding: 0.5rem 1rem; border-radius: 99px; font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500; color: #a78bfa;">
+            2 MERN Internships</div>
+          <div class="hero-stat-badge"
+            style="background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); padding: 0.5rem 1rem; border-radius: 99px; font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500; color: #a78bfa;">
+            40+ REST APIs</div>
+          <div class="hero-stat-badge"
+            style="background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); padding: 0.5rem 1rem; border-radius: 99px; font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500; color: #a78bfa;">
+            Real-Time Apps</div>
+          <div class="hero-stat-badge"
+            style="background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.2); padding: 0.5rem 1rem; border-radius: 99px; font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500; color: #a78bfa;">
+            AI Integration</div>
+        </div>
+        <div class="hero-ctas-row">
+          <a href="#contact" class="btn btn-primary" id="hero-hire-btn">
+            Hire Me
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+
+          <div class="hero-socials-list">
+            <a href="https://github.com/balasadhana" target="_blank" rel="noopener" class="hero-social-link"
+              aria-label="Sadhana B GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sadhana-b-57a847283/" target="_blank" rel="noopener"
+              class="hero-social-link" aria-label="Sadhana B LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Mock IDE -->
+      <div class="mock-ide-wrapper hero-reveal-right">
+        <div class="mock-ide-container">
+          <div class="mock-ide-header">
+            <div class="ide-dots-row">
+              <span class="ide-dot dot-red"></span>
+              <span class="ide-dot dot-yellow"></span>
+              <span class="ide-dot dot-green"></span>
+            </div>
+            <div class="ide-tabs-row">
+              <button class="ide-tab active" data-file="sadhana" aria-label="View sadhana.ts">sadhana.ts</button>
+              <button class="ide-tab" data-file="architecture"
+                aria-label="View fullstack architecture">architecture.visual</button>
+            </div>
+            <span class="ide-title-text">TypeScript Editor</span>
+          </div>
+
+          <pre
+            class="mock-ide-editor"><code class="language-typescript"><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Sadhana B"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"MERN Stack Developer"</span>,
+  <span class="code-prop">location</span>: <span class="code-str">"India"</span>,
+  <span class="code-prop">passionate</span>: <span class="code-kw">true</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-str">"React"</span>, <span class="code-str">"Node"</span>, <span class="code-str">"Express"</span>, 
+    <span class="code-str">"MongoDB"</span>, <span class="code-str">"TypeScript"</span>, <span class="code-str">"Tailwind"</span>
+  ],
+  <span class="code-prop">openToWork</span>: <span class="code-kw">true</span>,
+  <span class="code-prop">activeSeeker</span>: <span class="code-kw">true</span>
+};
+
+<span class="code-comment">// Ready to engineer next-gen products</span>
+<span class="code-var">console</span>.<span class="code-fn">log</span>(<span class="code-str">"Let's build something amazing!"</span>);</code></pre>
+
+          <!-- Architecture Visualizer Container -->
+          <div class="mock-ide-architecture" style="display: none;">
+            <div class="arch-container">
+              <!-- Top Row: Client, Connector, Server -->
+              <div class="arch-top-row">
+                <!-- React.js Client Card -->
+                <div class="arch-card client-card" data-step="1">
+                  <div class="arch-card-header">
+                    <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg" class="arch-icon">
+                      <circle r="2.05" fill="#61dafb" />
+                      <g fill="none" stroke="#61dafb" stroke-width="1.2">
+                        <ellipse rx="11" ry="4.2" />
+                        <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                        <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                      </g>
+                    </svg>
+                    <span>1. Frontend UI</span>
+                  </div>
+                  <!-- Bouncing Chart bars -->
+                  <div class="arch-chart-box">
+                    <div class="arch-bar bar-1"></div>
+                    <div class="arch-bar bar-2"></div>
+                    <div class="arch-bar bar-3"></div>
+                    <div class="arch-bar bar-4"></div>
+                  </div>
+                  <!-- Badges row -->
+                  <div class="arch-badge-row">
+                    <div class="arch-badge-item">Fetch API (HTTP)</div>
+                    <div class="arch-badge-item">State & Re-render</div>
+                  </div>
+                  <!-- Tooltip Detail on Hover -->
+                  <div class="arch-card-hover-detail">
+                    Triggers fetch() on action. Updates Client State to re-render the UI.
+                  </div>
+                </div>
+
+                <!-- API Connector -->
+                <div class="arch-connector" data-step="2">
+                  <span class="connector-label">REST API</span>
+                  <div class="connector-line-wrapper">
+                    <div class="connector-arrow arrow-req">
+                      <div class="connector-dot dot-req"></div>
+                      <svg width="100%" height="6" viewBox="0 0 100 6" fill="none" preserveAspectRatio="none">
+                        <path d="M0 3H100" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 3" />
+                      </svg>
+                    </div>
+                    <div class="connector-arrow arrow-res">
+                      <div class="connector-dot dot-res"></div>
+                      <svg width="100%" height="6" viewBox="0 0 100 6" fill="none" preserveAspectRatio="none">
+                        <path d="M100 3H0" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="4 3" />
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- Tooltip Detail on Hover -->
+                  <div class="arch-card-hover-detail connector-detail">
+                    HTTP Request (GET/POST) payload carried as JSON packets.
+                  </div>
+                </div>
+
+                <!-- Node.js Server Card -->
+                <div class="arch-card server-card" data-step="3">
+                  <div class="arch-card-header">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#339933" class="arch-icon">
+                      <path
+                        d="M12 0L2 5.8v12.4L12 24l10-5.8V5.8L12 0zm-1.8 17.5h-2.1v-6.2c0-.9-.5-1.4-1.4-1.4-.4 0-.8.1-1.1.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v10.5z" />
+                    </svg>
+                    <span>3. Backend API</span>
+                  </div>
+                  <!-- Mini JSON preview -->
+                  <div class="arch-code-preview">
+                    <div class="preview-url">GET /api/data</div>
+                    <div class="preview-json">
+                      <span class="preview-bracket">{</span><br>
+                      &nbsp;&nbsp;<span class="preview-key">"status"</span>: <span class="preview-val">200</span>,<br>
+                      &nbsp;&nbsp;<span class="preview-key">"payload"</span>: <span class="preview-arr">[...]</span><br>
+                      <span class="preview-bracket">}</span>
+                    </div>
+                  </div>
+                  <div class="arch-status-indicator">
+                    <span class="status-dot"></span>
+                    <span>Server running</span>
+                  </div>
+                  <!-- Tooltip Detail on Hover -->
+                  <div class="arch-card-hover-detail">
+                    Express Router routes endpoint, executes logic, queries DB database, returns response.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Database Connection -->
+              <div class="arch-bottom-row">
+                <!-- Database Card -->
+                <div class="arch-card db-card" data-step="4">
+                  <div class="arch-card-header">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#47a248" class="arch-icon">
+                      <path
+                        d="M12 .002C12 .002 6.88 5.176 6.88 10.37c0 4.148 2.296 7.784 5.12 9.63v3.998h.001c2.823-1.846 5.118-5.482 5.118-9.63 0-5.194-5.12-10.368-5.12-10.368zm0 2.215c2.316 2.87 3.518 6.136 3.518 8.155 0 2.923-1.623 5.484-3.518 6.784v-14.94z" />
+                    </svg>
+                    <span>4. DB Storage</span>
+                  </div>
+                  <div class="db-details">Persists collection data</div>
+                  <!-- Tooltip Detail on Hover -->
+                  <div class="arch-card-hover-detail db-detail">
+                    MongoDB stores datasets. Handles database queries & updates from Backend Server.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-ide-footer">
+            <div class="ide-switcher-dots">
+              <span class="ide-switch-dot active" data-target="sadhana" aria-label="Page 1 details"></span>
+              <span class="ide-switch-dot" data-target="architecture" aria-label="Page 2 details"></span>
+            </div>
+            <span class="ide-lang-indicator">TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- About Me Section --- -->
+  <section class="container section-padding" id="about">
+    <div class="about-sections-grid">
+      <!-- Left Column: Intro -->
+      <div class="about-intro-col scroll-reveal">
+        <div class="section-heading-block" style="align-items: flex-start; text-align: left; margin-bottom: 1.5rem;">
+          <div class="heading-tagline">
+            <span class="tagline-line"></span>
+            <span class="tagline-text">Introduction</span>
+            <span class="tagline-line"></span>
+          </div>
+          <h2 class="heading-title-text">Who I Am & What I Do</h2>
+        </div>
+        <p class="about-body-text">
+          I'm Sadhana B, an MCA student and MERN Stack Developer with hands-on internship experience in building
+          full-stack applications, REST APIs, and responsive user interfaces.
+        </p>
+        <p class="about-body-text">
+          My core strength lies in developing scalable and maintainable software systems using MongoDB, Express.js,
+          React.js, and Node.js. I've worked on AI-powered inventory forecasting systems, real-time collaborative
+          applications, secure JWT authentication, role-based access control, and analytics dashboards.
+        </p>
+        <p class="about-body-text">
+          I enjoy solving real-world problems through technology and continuously improving my skills in full-stack
+          development, system design, and modern JavaScript ecosystems.
+        </p>
+      </div>
+
+      <!-- Right Column: Bento Box -->
+      <div class="bento-resume-container scroll-reveal">
+        
+        <!-- Profile Card -->
+        <div class="bento-card bento-profile">
+          <div class="bento-profile-image">
+            <img src="assets/profile.png" alt="Sadhana B Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+          </div>
+          <h3 class="bento-profile-name">Sadhana B</h3>
+          <p class="bento-profile-role">MERN Stack Developer</p>
+          
+          <ul class="bento-info-list">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5"/></svg>
+              MCA Student
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              India
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/sadhana-b-57a847283/" target="_blank" style="text-decoration: underline; color: inherit;">LinkedIn</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              balasadhana983@gmail.com
+            </li>
+          </ul>
+
+          <a href="resume.pdf" download="Sadhana_B_Resume.pdf" class="btn-cta-premium btn-bento-download">
+            <span class="btn-cta-premium-content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <line x1="10" y1="9" x2="8" y2="9"></line>
+              </svg>
+              Download Resume
+            </span>
+          </a>
+        </div>
+
+        <!-- Soft Skills Card -->
+        <div class="bento-card bento-skills">
+          <div class="bento-card-header">
+            <h4 class="bento-card-title">Soft Skills</h4>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="bento-skills-list flex-wrap-badges">
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+              Problem Solving
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+              Quick Learner
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/></svg>
+              Analytical Thinking
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Team Collaboration
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
+              Adaptability
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              Communication
+            </div>
+            <div class="bento-skill-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              Innovation & Creativity
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+  </section>
+
+  <!-- --- My Tech Stack Section --- -->
+  <section class="container section-padding scroll-reveal" id="tech-stack">
+    <div class="section-heading-block">
+      <div class="heading-tagline">
+        <span class="tagline-line"></span>
+        <span class="tagline-text">Capabilities</span>
+        <span class="tagline-line"></span>
+      </div>
+      <h2 class="heading-title-text">My Tech Stack</h2>
+      <p class="heading-desc-text">Tools, frameworks, and database engines I reach for every single day.</p>
+    </div>
+
+    <div class="tech-console-grid">
+      <!-- Frontend Card -->
+      <div class="tech-console-card frontend-card scroll-reveal">
+        <div class="tech-console-header">
+          <div class="tech-icon-glow-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="console-category-icon">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="tech-title-wrap">
+            <h3 class="tech-console-title">Frontend</h3>
+            <span class="tech-console-subtitle">User Interface & UX</span>
+          </div>
+        </div>
+        <div class="tech-console-chips">
+          <!-- HTML5 -->
+          <div class="tech-console-chip html5-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0z" fill="#E34F26" />
+                  <path d="M12 2.2v19.6l6.8-2.2 1.6-17.4H12z" fill="#EF652A" />
+                  <path d="M12 9.6H7.8l-.3-3.4H12V3.4H4.3l.8 9.6H12v-3.4zm0 6.9l-3.3-.9-.2-2.3H5.1l.4 5.3 6.5 1.8V16.5z"
+                    fill="#EBEBEB" />
+                  <path d="M12 9.6h4.5l-.4 5.1-4.1 1.1v3.5l6.5-1.8.8-9.9H12v2zm0-6.2v2.8h4.8l-.3 3.4H12v-6.2z"
+                    fill="#FFF" />
+                </svg>
+              </div>
+              <span class="chip-name">HTML5</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Semantic structures & SEO elements</div>
+          </div>
+          <!-- CSS3 -->
+          <div class="tech-console-chip css3-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0z" fill="#1572B6" />
+                  <path d="M12 2.2v19.6l6.8-2.2 1.6-17.4H12z" fill="#33A9DC" />
+                  <path d="M12 9.6H7.8l-.3-3.4H12V3.4H4.3l.8 9.6H12v-3.4zm0 6.9l-3.3-.9-.2-2.3H5.1l.4 5.3 6.5 1.8V16.5z"
+                    fill="#EBEBEB" />
+                  <path d="M12 9.6h4.5l-.4 5.1-4.1 1.1v3.5l6.5-1.8.8-9.9H12v2z" fill="#FFF" />
+                  <path d="M12 3.4h4.8l-.3 3.4H12v-3.4z" fill="#FFF" />
+                </svg>
+              </div>
+              <span class="chip-name">CSS3</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Responsive layouts, Flexbox & Grid</div>
+          </div>
+          <!-- JavaScript -->
+          <div class="tech-console-chip js-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="#f7df1e" />
+                  <path
+                    d="M24 0v24H0V0h24zm-11.4 17.5c-.8-.5-1.1-1.2-1.1-2.1h-2.2c0 1.8 1.1 3.2 3.3 3.2 2.2 0 3.3-1.2 3.3-2.8 0-3.3-4.5-2.8-4.5-4.4 0-.6.5-.9 1.2-.9.7 0 1.2.4 1.3 1.1h2.1c-.1-1.8-1.3-2.9-3.4-2.9-2 0-3.3 1.1-3.3 2.7 0 3.1 4.5 2.7 4.5 4.5 0 .7-.6 1-1.3 1.2zm8.8-9.3h-2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1z"
+                    fill="#000" />
+                </svg>
+              </div>
+              <span class="chip-name">JavaScript</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Modern ES6+, DOM APIs & Async code</div>
+          </div>
+          <!-- React.js -->
+          <div class="tech-console-chip react-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg">
+                  <circle r="2.05" fill="#61dafb" />
+                  <g fill="none" stroke="#61dafb" stroke-width="1">
+                    <ellipse rx="11" ry="4.2" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                  </g>
+                </svg>
+              </div>
+              <span class="chip-name">React.js</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Hooks, Router, Redux & Component lifecycle</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Card -->
+      <div class="tech-console-card backend-card scroll-reveal">
+        <div class="tech-console-header">
+          <div class="tech-icon-glow-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="console-category-icon">
+              <path
+                d="M20 7H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2zM20 15H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2zM20 23H4a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="6" y1="4" x2="6.01" y2="4" />
+              <line x1="6" y1="12" x2="6.01" y2="12" />
+              <line x1="6" y1="20" x2="6.01" y2="20" />
+            </svg>
+          </div>
+          <div class="tech-title-wrap">
+            <h3 class="tech-console-title">Backend</h3>
+            <span class="tech-console-subtitle">Server-Side Engines</span>
+          </div>
+        </div>
+        <div class="tech-console-chips">
+          <!-- Node.js -->
+          <div class="tech-console-chip node-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0L2 5.8v12.4L12 24l10-5.8V5.8L12 0zm-1.8 17.5h-2.1v-6.2c0-.9-.5-1.4-1.4-1.4-.4 0-.8.1-1.1.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v10.5z"
+                    fill="#339933" />
+                </svg>
+              </div>
+              <span class="chip-name">Node.js</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Asynchronous event-driven logic runtime</div>
+          </div>
+          <!-- Express.js -->
+          <div class="tech-console-chip express-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                  <path
+                    d="M24 11.378H4.662l3.418-3.418-1.503-1.503L0 12.977l6.577 6.52 1.503-1.503-3.418-3.418H24v-3.198z"
+                    fill="#fff" opacity="0.3" /><text x="12" y="16" font-family="Arial" font-weight="bold"
+                    font-size="12" fill="#fff" text-anchor="middle">Ex</text>
+                </svg>
+              </div>
+              <span class="chip-name">Express.js</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Middleware framework & routers</div>
+          </div>
+          <!-- REST APIs -->
+          <div class="tech-console-chip rest-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 18l6-6-6-6M8 6l-6 6 6 6M12 4v16" />
+                </svg>
+              </div>
+              <span class="chip-name">REST APIs</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Structured endpoint patterns & JSON routing</div>
+          </div>
+          <!-- JWT Authentication -->
+          <div class="tech-console-chip jwt-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3M15.5 7.5L14 9M18.5 4.5L17 6" />
+                </svg>
+              </div>
+              <span class="chip-name">JWT Authentication</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Secure cookie tokens & credentials validators</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database Card -->
+      <div class="tech-console-card database-card scroll-reveal">
+        <div class="tech-console-header">
+          <div class="tech-icon-glow-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="console-category-icon">
+              <ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4 3 9 3s9-1.34 9-3" fill="none"
+                stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="tech-title-wrap">
+            <h3 class="tech-console-title">Database</h3>
+            <span class="tech-console-subtitle">Query & Persistency</span>
+          </div>
+        </div>
+        <div class="tech-console-chips">
+          <!-- MongoDB -->
+          <div class="tech-console-chip mongodb-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 .002C12 .002 6.88 5.176 6.88 10.37c0 4.148 2.296 7.784 5.12 9.63v3.998h.001c2.823-1.846 5.118-5.482 5.118-9.63 0-5.194-5.12-10.368-5.12-10.368zm0 2.215c2.316 2.87 3.518 6.136 3.518 8.155 0 2.923-1.623 5.484-3.518 6.784v-14.94z"
+                    fill="#47a248" />
+                </svg>
+              </div>
+              <span class="chip-name">MongoDB</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Document database & aggregations</div>
+          </div>
+          <!-- Mongoose -->
+          <div class="tech-console-chip mongoose-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <path d="M9 15h6" />
+                  <path d="M9 12h6" />
+                </svg>
+              </div>
+              <span class="chip-name">Mongoose</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">NoSQL models, schemas & validation</div>
+          </div>
+          <!-- SQL -->
+          <div class="tech-console-chip sql-chip" data-level="3">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12h18" />
+                </svg>
+              </div>
+              <span class="chip-name">SQL</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Relational tables, SQL queries & schemas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages Card -->
+      <div class="tech-console-card languages-card scroll-reveal">
+        <div class="tech-console-header">
+          <div class="tech-icon-glow-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="console-category-icon">
+              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="tech-title-wrap">
+            <h3 class="tech-console-title">Languages</h3>
+            <span class="tech-console-subtitle">Syntax Competency</span>
+          </div>
+        </div>
+        <div class="tech-console-chips">
+          <!-- JavaScript (Languages) -->
+          <div class="tech-console-chip lang-js-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="#f7df1e" />
+                  <path
+                    d="M24 0v24H0V0h24zm-11.4 17.5c-.8-.5-1.1-1.2-1.1-2.1h-2.2c0 1.8 1.1 3.2 3.3 3.2 2.2 0 3.3-1.2 3.3-2.8 0-3.3-4.5-2.8-4.5-4.4 0-.6.5-.9 1.2-.9.7 0 1.2.4 1.3 1.1h2.1c-.1-1.8-1.3-2.9-3.4-2.9-2 0-3.3 1.1-3.3 2.7 0 3.1 4.5 2.7 4.5 4.5 0 .7-.6 1-1.3 1.2zm8.8-9.3h-2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1z"
+                    fill="#000" />
+                </svg>
+              </div>
+              <span class="chip-name">JavaScript</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Full-stack scripting & dynamic actions</div>
+          </div>
+          <!-- Python -->
+          <div class="tech-console-chip python-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0C5.4 0 0 5.4 0 12c0 1.9.4 3.7 1.3 5.3l.5-.8C1.3 15 1 13.5 1 12 1 6 6 1 12 1s11 5 11 11c0 2.2-.6 4.3-1.8 6.1l.6.6c1.3-2 2-4.4 2-6.7C24 5.4 18.6 0 12 0z"
+                    fill="#306998" opacity="0.2" />
+                  <path
+                    d="M12.2 1.8c-2.3 0-4.3 1.7-4.6 4h4.6v.9H5.9C3.6 6.7 1.9 8.7 1.9 11s1.7 4.3 4 4.6v-4.6h-.9v6.3c2.3 0 4.3-1.7 4.6-4H5v-.9h7.2c2.3 0 4-2 4-4.3s-1.7-4.3-4-4.6z"
+                    fill="#306998" />
+                  <path
+                    d="M11.8 22.2c2.3 0 4.3-1.7 4.6-4H11.8v-.9h6.3c2.3 0 4-2 4-4.3s-1.7-4.3-4-4.6v4.6h.9V6.7c-2.3 0-4.3 1.7-4.6 4H19v.9h-7.2c-2.3 0-4 2-4 4.3s1.7 4.3 4 4.6z"
+                    fill="#FFE873" />
+                </svg>
+              </div>
+              <span class="chip-name">Python</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Scripting, analytics & ARIMA model math</div>
+          </div>
+          <!-- Java -->
+          <div class="tech-console-chip java-chip" data-level="3">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                  <line x1="6" y1="1" x2="6" y2="4" />
+                  <line x1="10" y1="1" x2="10" y2="4" />
+                  <line x1="14" y1="1" x2="14" y2="4" />
+                </svg>
+              </div>
+              <span class="chip-name">Java</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">OOP principles, variables & algorithms</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Card -->
+      <div class="tech-console-card tools-card scroll-reveal">
+        <div class="tech-console-header">
+          <div class="tech-icon-glow-box">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="console-category-icon">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="tech-title-wrap">
+            <h3 class="tech-console-title">Tools</h3>
+            <span class="tech-console-subtitle">Development Workflow</span>
+          </div>
+        </div>
+        <div class="tech-console-chips">
+          <!-- Git -->
+          <div class="tech-console-chip git-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.384 11.233L12.767.616a1.085 1.085 0 00-1.536 0L9.426 2.421l3.053 3.053a2.71 2.71 0 012.87 2.87l3.08 3.08a2.716 2.716 0 012.956 2.956l2.003 2.003a1.085 1.085 0 000-1.536l.004-.002zm-12.029 3.08a2.714 2.714 0 01-2.906-2.906L5.367 8.326a2.723 2.723 0 01-3.322 0L.616 9.756a1.085 1.085 0 000 1.536l10.617 10.617a1.085 1.085 0 001.536 0l1.808-1.808-3.232-3.232zM12 8.167a1.083 1.083 0 100 2.166 1.083 1.083 0 000-2.166z"
+                    fill="#f05032" />
+                </svg>
+              </div>
+              <span class="chip-name">Git</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Distributed version control system</div>
+          </div>
+          <!-- GitHub -->
+          <div class="tech-console-chip github-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </div>
+              <span class="chip-name">GitHub</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">Cloud repository hosting & pull requests</div>
+          </div>
+          <!-- VS Code -->
+          <div class="tech-console-chip vscode-chip" data-level="5">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#38bdf8"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml">
+                  <polyline points="22 17 17 12 22 7" />
+                  <polyline points="2 7 7 12 2 17" />
+                  <path d="m14 4-4 16" />
+                </svg>
+              </div>
+              <span class="chip-name">VS Code</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+              </div>
+            </div>
+            <div class="chip-details">Editor workspace, debuggers & shortcuts</div>
+          </div>
+          <!-- Postman -->
+          <div class="tech-console-chip postman-chip" data-level="4">
+            <div class="chip-main">
+              <div class="tech-logo-box">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff6c37"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5" />
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12c0 2.24.74 4.3 2 5.97M20 17.97A9.93 9.93 0 0 0 22 12c0-5.5-4.5-10-10-10z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <span class="chip-name">Postman</span>
+              <div class="tech-led-meter">
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot active"></span>
+                <span class="led-dot"></span>
+              </div>
+            </div>
+            <div class="chip-details">API testing suite & endpoint verifiers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Experience & Education --- -->
+  <section class="container section-padding scroll-reveal" id="experience">
+    <div class="section-heading-block">
+      <div class="heading-tagline">
+        <span class="tagline-line"></span>
+        <span class="tagline-text">My Journey</span>
+        <span class="tagline-line"></span>
+      </div>
+      <h2 class="heading-title-text">Experience & Education</h2>
+    </div>
+
+    <div class="journey-bento-grid">
+      <!-- Card 1: Experience (Wide) -->
+      <div class="bento-card bento-wide scroll-reveal premium-card-face" id="bento-experience">
+        <div class="bento-card-main-header">
+          <div class="bento-badge-row-header" style="margin-bottom: 0.25rem;">
+            <span class="bento-card-category"
+              style="color: #a78bfa; display: flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase" style="stroke: #a78bfa;">
+                <rect width="20" height="14" x="2" y="6" rx="2" />
+                <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              Professional Journey
+            </span>
+          </div>
+          <h3 class="bento-card-title" style="margin-bottom: 0.5rem;">Internship Experience</h3>
+        </div>
+
+        <div class="bento-internships-grid">
+
+          <!-- Nitroware Internship -->
+          <div class="internship-inner-card nitroware-theme">
+            <div class="bento-badge-row-header" style="margin-bottom: 0;">
+              <span style="color: #a78bfa; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em;">Dec 2025 - May
+                2026</span>
+              <span class="bento-tag-status status-active"
+                style="color: #a78bfa; background: rgba(109, 52, 228, 0.08); border: 1px solid rgba(109, 52, 228, 0.18); padding: 0.1rem 0.35rem; font-size: 0.55rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.25rem;"><span
+                  class="status-dot"
+                  style="width: 4px; height: 4px; background: #a78bfa; animation: status-blink 1.5s infinite; border-radius: 50%;"></span>Completed</span>
+            </div>
+            <div class="internship-title-block">
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0.25rem 0 0.1rem 0;">MERN Stack
+                Intern</h4>
+              <p style="font-size: 0.75rem; margin: 0; color: #a78bfa; font-weight: 600;">Nitroware Technologies &bull;
+                Coimbatore</p>
+            </div>
+            <p style="font-size: 0.78rem; line-height: 1.45; color: var(--text-secondary); margin: 0 0 0.5rem 0;">
+              Developed FlowTrack AI, an AI-powered inventory and production management platform using the MERN stack.
+              Integrated ARIMA & LSTM forecasting models, real-time Socket.io communication, and role-based access
+              control to streamline operational workflows.
+            </p>
+
+            <div class="bento-tech-pills" style="padding-top: 0; margin-top: auto; gap: 0.3rem; flex-wrap: wrap;">
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">React</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">MongoDB</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">ARIMA</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">LSTM</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">Socket.io</span>
+            </div>
+
+            <div class="mini-metrics-box" style="margin-top: 0.5rem; gap: 0.3rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-weight:600; color:#fff; font-size: 0.65rem;">AI Forecasting</span>
+                <span class="bento-badge badge-emerald"
+                  style="font-size:0.55rem; padding: 0.08rem 0.3rem;">Active</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-weight:600; color:#fff; font-size: 0.65rem;">Real-Time Updates</span>
+                <span class="bento-badge badge-blue"
+                  style="font-size:0.55rem; padding: 0.08rem 0.3rem;">Socket.io</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vinsup Internship -->
+          <div class="internship-inner-card vinsup-theme">
+            <div class="bento-badge-row-header" style="margin-bottom: 0;">
+              <span style="color: #38bdf8; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em;">May 2025 - Jun
+                2025</span>
+              <span class="bento-tag-status status-merged"
+                style="color: #38bdf8; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.18); padding: 0.1rem 0.35rem; font-size: 0.55rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.25rem;"><span
+                  class="status-dot"
+                  style="width: 4px; height: 4px; background: #38bdf8; border-radius: 50%;"></span>Completed</span>
+            </div>
+            <div class="internship-title-block">
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0.25rem 0 0.1rem 0;">MERN Stack
+                Intern
+              </h4>
+              <p style="font-size: 0.75rem; margin: 0; color: #38bdf8; font-weight: 600;">Vinsup InfoTech &bull; Madurai
+              </p>
+            </div>
+            <p style="font-size: 0.78rem; line-height: 1.45; color: var(--text-secondary); margin: 0 0 0.25rem 0;">
+              Developed 'Interview Prep Website', structured mock exam engines with secure JWT verifiers and automated
+              resume generator.</p>
+
+            <div class="bento-tech-pills" style="padding-top: 0; margin-top: auto; gap: 0.3rem;">
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">React</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">NodeJS</span>
+              <span class="bento-tech-pill" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">JWT Auth</span>
+            </div>
+
+            <div class="mini-metrics-box" style="margin-top: 0.5rem; gap: 0.3rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-weight:600; color:#fff; font-size: 0.65rem;">Resume Engine</span>
+                <span class="bento-badge badge-purple" style="font-size:0.55rem; padding: 0.08rem 0.3rem;">&lt; 1.5s
+                  PDF</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-weight:600; color:#fff; font-size: 0.65rem;">Aptitude Tests</span>
+                <span class="bento-badge badge-emerald"
+                  style="font-size:0.55rem; padding: 0.08rem 0.3rem;">INSTANT</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 2: Certifications (Standard) -->
+      <div class="bento-card scroll-reveal premium-card-face" id="bento-certs">
+        <div class="bento-card-main">
+
+          <h3 class="bento-card-title">Certifications</h3>
+          <p class="bento-card-company">MERN & Financial Audits</p>
+          <p class="bento-card-desc">Completed Full Stack Development MERN Certification at Liveware and Tally
+            certification at CSC Institute, verifying core technical and accounting database configurations.</p>
+
+        </div>
+
+        <div class="bento-card-visual bento-visual-certificates">
+          <style>
+            @keyframes floatLabel {
+              0% {
+                transform: translateY(0);
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+              }
+
+              50% {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              }
+
+              100% {
+                transform: translateY(0);
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+              }
+            }
+          </style>
+          <div class="certs-vault"
+            style="display: flex; gap: 1rem; justify-content: center; width: 100%; align-items: flex-end;">
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+              <span
+                style="font-size: 0.55rem; color: #34d399; background: rgba(52, 211, 153, 0.1); padding: 0.25rem 0.6rem; border-radius: 4px; border: 1px solid rgba(52, 211, 153, 0.3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; animation: floatLabel 3s ease-in-out infinite;">CSC
+                Institute</span>
+              <div class="cert-badge" style="width: 100px; padding: 0.5rem 0.4rem; gap: 0.25rem; margin: 0;">
+                <div class="cert-icon-box" style="width: 2rem; height: 2rem;">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#34d399"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="badge-svg-icon"
+                    style="width: 1.125rem; height: 1.125rem;">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="3" y1="15" x2="21" y2="15" />
+                    <line x1="9" y1="9" x2="9" y2="21" />
+                    <line x1="15" y1="3" x2="15" y2="15" />
+                  </svg>
+                </div>
+                <span class="cert-title" style="font-size: 0.6rem;">Tally ERP</span>
+                <span class="cert-verify" style="font-size: 0.45rem;">Accounts</span>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+              <span
+                style="font-size: 0.55rem; color: #a78bfa; background: rgba(167, 139, 250, 0.1); padding: 0.25rem 0.6rem; border-radius: 4px; border: 1px solid rgba(167, 139, 250, 0.3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; animation: floatLabel 3s ease-in-out infinite 1.5s;">Liveware</span>
+              <div class="cert-badge" style="width: 100px; padding: 0.5rem 0.4rem; gap: 0.25rem; margin: 0;">
+                <div class="cert-icon-box" style="width: 2rem; height: 2rem;">
+                  <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    stroke="#a78bfa" stroke-width="1.5" class="badge-svg-icon" style="width: 1.25rem; height: 1.25rem;">
+                    <circle cx="0" cy="0" r="2.05" fill="#a78bfa" />
+                    <g stroke="#a78bfa">
+                      <ellipse rx="11" ry="4.2" />
+                      <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                      <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                    </g>
+                  </svg>
+                </div>
+                <span class="cert-title" style="font-size: 0.6rem;">MERN Stack</span>
+                <span class="cert-verify" style="font-size: 0.45rem;">Master</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- Card 3: Education (Wide) -->
+      <div class="bento-card bento-wide scroll-reveal premium-card-face" id="bento-education">
+        <div class="bento-card-main-header">
+          <div class="bento-badge-row-header" style="margin-bottom: 0.25rem;">
+            <span class="bento-card-category"
+              style="color: #fbbf24; display: flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"
+                style="stroke: #fbbf24;">
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                <path d="M21.5 12v6" />
+              </svg>
+              Academic Path
+            </span>
+          </div>
+          <h3 class="bento-card-title" style="margin-bottom: 0.5rem;">Education</h3>
+        </div>
+
+        <div class="bento-education-grid">
+
+          <!-- MCA Degree -->
+          <div class="education-inner-card mca-theme">
+            <div class="bento-badge-row-header" style="margin-bottom: 0;">
+              <span style="color: #fbbf24; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em;">2024 -
+                2026</span>
+              <span class="bento-tag-status status-compiling"
+                style="color: #fbbf24; background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.18); padding: 0.1rem 0.35rem; font-size: 0.55rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.25rem;"><span
+                  class="status-dot"
+                  style="width: 4px; height: 4px; background: #fbbf24; border-radius: 50%;"></span>Completed</span>
+            </div>
+
+            <div class="education-card-content">
+              <div class="education-text-side">
+                <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0.25rem 0 0.1rem 0;">MCA (Big Data
+                  Analytics)</h4>
+                <p style="font-size: 0.75rem; margin: 0 0 0.5rem 0; color: #fbbf24; font-weight: 600;">Fatima College
+                  &bull; Madurai</p>
+                <p style="font-size: 0.78rem; line-height: 1.45; color: var(--text-secondary); margin: 0;">Completed a
+                  Master of Computer Applications with a specialization in Big Data Analytics, focusing on data
+                  processing, analytics, database systems, and modern software development. Strengthening practical
+                  expertise through MERN stack development, industry internships, and real-world application projects.
+                </p>
+              </div>
+
+              <div class="education-visual-side">
+                <div class="gauge-container">
+                  <svg class="gauge-svg" viewBox="0 0 100 100">
+                    <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                    <circle class="gauge-fill" cx="50" cy="50" r="40"
+                      style="stroke-dasharray: 251.2; stroke-dashoffset: 20.1;"></circle>
+                  </svg>
+                  <div class="gauge-text">
+                    <span class="gauge-val">8.0</span>
+                    <span class="gauge-label">CGPA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- UG Degree -->
+          <div class="education-inner-card ug-theme">
+            <div class="bento-badge-row-header" style="margin-bottom: 0;">
+              <span style="color: #fbbf24; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em;">2021 -
+                2024</span>
+              <span class="bento-tag-status status-compiling"
+                style="color: #fbbf24; background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.18); padding: 0.1rem 0.35rem; font-size: 0.55rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.25rem;"><span
+                  class="status-dot"
+                  style="width: 4px; height: 4px; background: #fbbf24; border-radius: 50%;"></span>Graduated</span>
+            </div>
+
+            <div class="education-card-content">
+              <div class="education-text-side">
+                <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0.25rem 0 0.1rem 0;">B.Com with
+                  Computer Application</h4>
+                <p style="font-size: 0.75rem; margin: 0 0 0.5rem 0; color: #fbbf24; font-weight: 600;">Fatima College
+                  &bull; Madurai</p>
+                <p style="font-size: 0.78rem; line-height: 1.45; color: var(--text-secondary); margin: 0;">Established a
+                  foundation in computer applications, database systems, programming concepts, and business operations.
+                  Developed analytical and problem-solving skills while gaining exposure to technology-enabled business
+                  solutions, which later strengthened my transition into full-stack software development.</p>
+              </div>
+
+              <div class="education-visual-side">
+                <div class="gauge-container">
+                  <svg class="gauge-svg" viewBox="0 0 100 100">
+                    <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+                    <circle class="gauge-fill" cx="50" cy="50" r="40"
+                      style="stroke-dasharray: 251.2; stroke-dashoffset: 50.2;"></circle>
+                  </svg>
+                  <div class="gauge-text">
+                    <span class="gauge-val">8.0</span>
+                    <span class="gauge-label">CGPA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 4: Achievements (Standard) -->
+      <div class="bento-card scroll-reveal premium-card-face" id="bento-achievements">
+        <div class="bento-card-main">
+          <div class="bento-badge-row-header">
+            <span class="bento-card-category" style="color: #38bdf8;">Highlights</span>
+            <span class="bento-tag-status status-verified"
+              style="color: #38bdf8; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.18); padding: 0.1rem 0.35rem; font-size: 0.55rem; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.25rem;"><span
+                class="status-dot"
+                style="width: 4px; height: 4px; background: #38bdf8; border-radius: 50%;"></span>Honored</span>
+          </div>
+          <h3 class="bento-card-title">Achievements</h3>
+          <p class="bento-card-company">Leadership & Excellence</p>
+          <p class="bento-card-desc">Recognized for outstanding leadership as Vice President of the SYSCOM Club and
+            honored as the Best Outgoing Student at Fatima College, Madurai.</p>
+          <div class="bento-tech-pills">
+            <span class="bento-tech-pill">SYSCOM CLUB</span>
+            <span class="bento-tech-pill">Fatima College</span>
+          </div>
+        </div>
+
+        <div class="bento-card-visual bento-visual-certificates">
+          <div class="certs-vault" style="display: flex; gap: 0.5rem; justify-content: center; width: 100%;">
+            <div class="cert-badge" style="width: 100px; padding: 0.5rem 0.4rem; gap: 0.25rem;">
+              <div class="cert-icon-box" style="width: 2rem; height: 2rem;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#38bdf8"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="badge-svg-icon"
+                  style="width: 1.125rem; height: 1.125rem;">
+                  <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" />
+                  <path d="M3 20h18" />
+                </svg>
+              </div>
+              <span class="cert-title" style="font-size: 0.58rem; text-align: center;">Vice President</span>
+              <span class="cert-verify" style="font-size: 0.45rem;">SYSCOM Club</span>
+            </div>
+            <div class="cert-badge" style="width: 100px; padding: 0.5rem 0.4rem; gap: 0.25rem;">
+              <div class="cert-icon-box" style="width: 2rem; height: 2rem;">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fbbf24"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="badge-svg-icon"
+                  style="width: 1.125rem; height: 1.125rem;">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34" />
+                  <path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z" />
+                </svg>
+              </div>
+              <span class="cert-title" style="font-size: 0.58rem; text-align: center;">Best Outgoing</span>
+              <span class="cert-verify" style="font-size: 0.45rem;">SYSCOM Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Featured Projects Section --- -->
+  <section class="container section-padding scroll-reveal" id="projects">
+    <div class="section-heading-block">
+      <div class="heading-tagline">
+        <span class="tagline-line"></span>
+        <span class="tagline-text">Portfolio</span>
+        <span class="tagline-line"></span>
+      </div>
+      <h2 class="heading-title-text">Featured Projects</h2>
+      <p class="heading-desc-text">A small selection of my recent works built for performance and scale.</p>
+    </div>
+
+    <div class="projects-showcase-grid">
+      <!-- Project 1 -->
+      <div class="project-card-perspective-wrapper">
+        <div class="premium-card-face project-premium-card">
+          <h3 class="project-title">FlowTrack AI</h3>
+          <p class="project-description">An AI-powered inventory and production management dashboard utilizing ARIMA &
+            LSTM models for safety stock recommendations and Socket.io for real-time collaboration.</p>
+          <div class="project-card-image-box">
+            <img src="assets/flowtrack-card.png" alt="FlowTrack AI Application Interface" loading="lazy">
+          </div>
+          <div class="project-tech-icons-row">
+            <div class="project-tech-icon-circle" data-tooltip="React">
+              <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg">
+                <circle r="2.05" fill="#61dafb" />
+                <g fill="none" stroke="#61dafb" stroke-width="1">
+                  <ellipse rx="11" ry="4.2" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Node.js">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                  d="M12 0L2 5.8v12.4L12 24l10-5.8V5.8L12 0zm-1.8 17.5h-2.1v-6.2c0-.9-.5-1.4-1.4-1.4-.4 0-.8.1-1.1.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v10.5z"
+                  fill="#339933" />
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="MongoDB">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                  d="M12 .002C12 .002 6.88 5.176 6.88 10.37c0 4.148 2.296 7.784 5.12 9.63v3.998h.001c2.823-1.846 5.118-5.482 5.118-9.63 0-5.194-5.12-10.368-5.12-10.368zm0 2.215c2.316 2.87 3.518 6.136 3.518 8.155 0 2.923-1.623 5.484-3.518 6.784v-14.94z"
+                  fill="#47a248" />
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Socket.IO">
+              <img src="https://cdn.simpleicons.org/socketdotio/ffffff" alt="Socket.IO" />
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Vite">
+              <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" />
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/balasadhana/FlowtrackAI" target="_blank" rel="noopener"
+              class="project-footer-link" aria-label="FlowTrack AI GitHub Repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              View on GitHub
+            </a>
+            <a href="https://flowtrack-ai.vercel.app" target="_blank" rel="noopener" class="project-footer-link link-btn-accent"
+              aria-label="FlowTrack AI Live Site">
+              Check Live Site
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card-perspective-wrapper">
+        <div class="premium-card-face project-premium-card">
+          <h3 class="project-title">Prepmate - Interview preparation website </h3>
+          <p class="project-description">A MERN-based interview preparation platform with resource centers, automated
+            quiz evaluations, secure JWT authorization, and instant resume pdf builder.</p>
+          <div class="project-card-image-box">
+            <div class="mockup-base mockup-prepmate">
+              <h4 class="pm-new-title">Ace Your Interview with <span>PrepMate</span></h4>
+              <div class="pm-new-btns">
+                <span class="pm-new-btn-pri">Login</span>
+                <span class="pm-new-btn-sec">Signup</span>
+              </div>
+              <p class="pm-new-desc">PrepMate is your one-stop platform to get ready for tech interviews...</p>
+              <div class="pm-new-cards">
+                <div class="pm-new-card">
+                  <div class="pm-new-icon">📈</div>
+                  <span>Progress Tracking</span>
+                </div>
+                <div class="pm-new-card">
+                  <div class="pm-new-icon">📄</div>
+                  <span>Resume Builder</span>
+                </div>
+                <div class="pm-new-card">
+                  <div class="pm-new-icon">🤖</div>
+                  <span>Mock Questions</span>
+                </div>
+                <div class="pm-new-card">
+                  <div class="pm-new-icon">📋</div>
+                  <span>MCQ Practice</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-tech-icons-row">
+            <div class="project-tech-icon-circle" data-tooltip="React">
+              <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg">
+                <circle r="2.05" fill="#61dafb" />
+                <g fill="none" stroke="#61dafb" stroke-width="1">
+                  <ellipse rx="11" ry="4.2" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                  <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+                </g>
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Node.js">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                  d="M12 0L2 5.8v12.4L12 24l10-5.8V5.8L12 0zm-1.8 17.5h-2.1v-6.2c0-.9-.5-1.4-1.4-1.4-.4 0-.8.1-1.1.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v6.2c0 .9-.5 1.4-1.4 1.4-.4 0-.8-.1-1.1-.3l-.4 1.7c.4.2.9.3 1.6.3 2.1 0 3.4-1.2 3.4-3.2v-6.1h2.2v10.5z"
+                  fill="#339933" />
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Express.js">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#fff" />
+                <path d="M15.5 13H11v1h4.5v2H11v1h4.5v2H9v-8h6.5v2z" fill="#fff" />
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="MongoDB">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                  d="M12 .002C12 .002 6.88 5.176 6.88 10.37c0 4.148 2.296 7.784 5.12 9.63v3.998h.001c2.823-1.846 5.118-5.482 5.118-9.63 0-5.194-5.12-10.368-5.12-10.368zm0 2.215c2.316 2.87 3.518 6.136 3.518 8.155 0 2.923-1.623 5.484-3.518 6.784v-14.94z"
+                  fill="#47a248" />
+              </svg>
+            </div>
+            <div class="project-tech-icon-circle" data-tooltip="Chart.js">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6384" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z" stroke="#36A2EB"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/balasadhana/PrepMate" target="_blank" rel="noopener" class="project-footer-link"
+              aria-label="Interview Prep Website GitHub Repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              View on GitHub
+            </a>
+            <a href="https://prepmate-steel.vercel.app/" target="_blank" rel="noopener" class="project-footer-link link-btn-accent"
+              aria-label="Interview Prep Website Live Site">
+              Check Live Site
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Projects CTA button -->
+    <div style="display:flex; justify-content:center; margin-top:4rem;">
+      <a href="projects/" class="btn-glow-spin" id="more-projects-btn">
+        <span class="btn-glow-spin-content">
+          More Projects
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- --- Call to Action Banner --- -->
+  <section class="container section-padding scroll-reveal" id="contact">
+    <div class="cta-floating-container">
+      <div class="cta-banner-wrapper">
+        <div class="cta-banner-grid-overlay"></div>
+        <div class="cta-glow-spotlight"></div>
+
+        <div class="cta-tagline">
+          <span class="cta-tagline-line"></span>
+          <span class="cta-tagline-text">Open to opportunities</span>
+          <span class="cta-tagline-line"></span>
+        </div>
+
+        <h2 class="cta-banner-title">Let's Build Something<br><span class="text-gradient">Amazing</span> Together</h2>
+        <p class="cta-banner-desc">I'm always excited to discuss new opportunities, collaborate on innovative projects,
+          or
+          chat about emerging technologies.</p>
+
+        <div class="contact-form-side"
+          style="position: relative; margin-top: 2rem; width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; text-align: left;">
+
+          <!-- Form Success Screen Overlay -->
+          <div class="form-success-card-overlay" aria-live="polite">
+            <div class="success-check-icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 800; color: #fff;">Message Sent!</h3>
+            <p
+              style="color: var(--text-secondary); font-size: 0.9375rem; max-width: 320px; margin: 0 auto; text-align: center;">
+              Thank you for reaching out. I will review your inquiry and reply within 24 hours.
+            </p>
+          </div>
+
+          <!-- Form Element -->
+          <form id="contact-form" action="https://formsubmit.co/balasadhana983@gmail.com" method="POST" novalidate>
+            <div class="form-inputs-group">
+
+              <!-- Two column row: Name & Email -->
+              <div class="contact-form-row">
+                <!-- Full Name -->
+                <div class="form-field-wrapper">
+                  <label for="contact-name" class="form-field-label">Full Name</label>
+                  <div class="contact-input-container">
+                    <svg class="contact-input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input type="text" id="contact-name" name="name" class="form-text-input" placeholder="Your name"
+                      required>
+                  </div>
+                  <span class="form-field-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-field-wrapper">
+                  <label for="contact-email" class="form-field-label">Email Address</label>
+                  <div class="contact-input-container">
+                    <svg class="contact-input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <input type="email" id="contact-email" name="email" class="form-text-input"
+                      placeholder="your@email.com" required>
+                  </div>
+                  <span class="form-field-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-field-wrapper">
+                <label for="contact-subject" class="form-field-label">Subject</label>
+                <div class="contact-input-container">
+                  <svg class="contact-input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                  <input type="text" id="contact-subject" name="_subject" class="form-text-input"
+                    placeholder="What's this about?" required>
+                </div>
+                <span class="form-field-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-field-wrapper">
+                <label for="contact-message" class="form-field-label">Your Message</label>
+                <div class="contact-input-container">
+                  <svg class="contact-input-icon textarea-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  <textarea id="contact-message" name="message" class="form-textarea-input"
+                    placeholder="Tell me what's on your mind..." required></textarea>
+                </div>
+                <span class="form-field-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-contact-submit"
+              style="margin-top: 1.5rem; width: 100%; justify-content: center;">
+              Send Message
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="container scroll-reveal"
+    style="padding-bottom: 3rem; display: flex; flex-direction: column; align-items: center;">
+    <div class="footer-divider-line" style="margin-bottom: 3rem; width: 100%;"></div>
+
+    <div class="creative-footer-pill">
+      <a href="mailto:balasadhana983@gmail.com" class="cfp-email" aria-label="Email me">
+        <div class="cfp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <span class="cfp-text">balasadhana983@gmail.com</span>
+      </a>
+
+      <div class="cfp-divider"></div>
+
+      <div class="cfp-socials">
+        <a href="https://github.com/balasadhana" target="_blank" rel="noopener" class="cfp-social-icon"
+          aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+            </path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sadhana-b-57a847283/" target="_blank" rel="noopener"
+          class="cfp-social-icon" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
