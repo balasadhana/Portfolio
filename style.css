@@ -5475,86 +5475,74 @@ footer:hover .footer-divider-line {
 
 @media (max-width: 992px) {
 
-  /* ── Hero: fade+slide-up instead of slide-left/right ── */
+  /* ── Hero & Nav: Proper keyframe animations (no static !important transform overrides that kill animation) ── */
   .hero-reveal-left {
-    opacity: 0;
-    transform: translateY(0) !important; /* override CSS translateX */
-    animation: mobile-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation: mobile-slide-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
     animation-delay: 0.1s !important;
   }
 
   .hero-reveal-right {
-    opacity: 0;
-    transform: translateY(0) !important;
-    animation: mobile-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation: mobile-slide-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
     animation-delay: 0.25s !important;
   }
 
-  /* Nav: simple fade-in drop */
   .nav-reveal-top {
-    opacity: 0;
-    animation: mobile-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    animation: mobile-slide-down 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
     animation-delay: 0.05s !important;
-    transform: translateX(-50%) !important; /* keep horizontal center */
   }
 
-  /* ── About section: fade+slide-up ── */
-  .about-intro-col.scroll-reveal {
-    opacity: 0;
+  /* ── Scroll Reveals: Use transition properly ── */
+  .scroll-reveal,
+  .about-intro-col.scroll-reveal,
+  .bento-resume-container.scroll-reveal,
+  .tech-console-card.scroll-reveal {
+    /* Base hidden state */
+    opacity: 0 !important;
     transform: translateY(24px) !important;
-    transition: opacity 0.7s ease, transform 0.7s ease !important;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out !important;
   }
 
-  .about-intro-col.scroll-reveal.reveal-visible {
+  .scroll-reveal.reveal-visible,
+  .about-intro-col.scroll-reveal.reveal-visible,
+  .bento-resume-container.scroll-reveal.reveal-visible,
+  .tech-console-card.scroll-reveal.reveal-visible {
+    /* Visible state */
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
 
-  /* ── Profile card (bento-resume-container): fade+slide-up ── */
-  .bento-resume-container.scroll-reveal {
-    opacity: 0;
-    transform: translateY(28px) !important;
-    transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s !important;
-  }
-
-  .bento-resume-container.scroll-reveal.reveal-visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-
-  /* ── All other scroll-reveal elements: fade+slide-up ── */
-  .scroll-reveal {
-    opacity: 0;
-    transform: translateY(20px) !important;
-    transition: opacity 0.6s ease, transform 0.6s ease !important;
-  }
-
-  .scroll-reveal.reveal-visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-
-  /* ── Inner cards: staggered fade-up ── */
+  /* Staggered inner cards */
   .internship-inner-card:first-child,
   .education-inner-card:first-child {
-    opacity: 0;
-    transform: translateY(20px) !important;
-    transition: opacity 0.6s ease 0s, transform 0.6s ease 0s !important;
+    transition-delay: 0s !important;
   }
 
   .internship-inner-card:last-child,
   .education-inner-card:last-child {
-    opacity: 0;
-    transform: translateY(20px) !important;
-    transition: opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s !important;
+    transition-delay: 0.15s !important;
   }
+}
 
-  .reveal-visible .internship-inner-card:first-child,
-  .reveal-visible .internship-inner-card:last-child,
-  .reveal-visible .education-inner-card:first-child,
-  .reveal-visible .education-inner-card:last-child {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+/* Keyframes for Mobile Hero */
+@keyframes mobile-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobile-slide-down {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 
