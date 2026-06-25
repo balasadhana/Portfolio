@@ -4983,4 +4983,111 @@ footer:hover .footer-divider-line {
   .bento-stats-grid {
     grid-template-columns: 1fr;
   }
-}
+}
+
+/* ============================================
+   MOBILE BUG FIXES
+   Fix text overflow + bento card visibility
+   ============================================ */
+
+/* Global overflow fix — prevents horizontal scroll on mobile */
+@media (max-width: 992px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Fix all text from going off screen */
+  p, h1, h2, h3, h4, h5, h6, span, li, a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* About section text alignment fix */
+  .about-body-text {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .heading-desc-text {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  /* Section heading left-align on mobile */
+  .section-heading-block {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+
+  .heading-tagline {
+    justify-content: flex-start;
+  }
+
+  /* Bento card visibility fix — increase contrast on mobile */
+  .bento-card {
+    background: rgba(15, 18, 28, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .bento-resume-container {
+    background: rgba(13, 17, 26, 0.95) !important;
+    border-color: rgba(109, 52, 228, 0.5) !important;
+  }
+
+  .internship-inner-card,
+  .education-inner-card {
+    background: rgba(18, 22, 36, 0.98) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  /* Fix bento text visibility */
+  .bento-card-title {
+    color: #ffffff !important;
+  }
+
+  .bento-profile-name {
+    color: #ffffff !important;
+  }
+
+  .bento-info-list li {
+    color: #cbd5e1 !important;
+  }
+
+  /* Fix about text brightness */
+  .about-body-text {
+    color: #cbd5e1 !important;
+  }
+
+  /* Skills bento card */
+  .bento-skill-badge {
+    color: #e2e8f0 !important;
+  }
+}
+
+/* Additional text overflow fix for very small screens */
+@media (max-width: 768px) {
+  .about-body-text,
+  .hero-subtitle,
+  .heading-desc-text,
+  .bento-card-desc,
+  .case-study-p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    hyphens: auto;
+  }
+
+  /* Fix section heading - left align */
+  .section-heading-block {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Fix about title */
+  .about-title {
+    font-size: 1.4rem;
+  }
+}
+
