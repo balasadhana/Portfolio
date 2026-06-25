@@ -522,6 +522,15 @@ function initHeroScrollParallax() {
   heroRight.addEventListener('animationend', () => handleAnimationEnd(heroRight));
 
   window.addEventListener('scroll', () => {
+    // ── MOBILE: disable hero parallax ──
+    if (window.innerWidth < 992) {
+      heroLeft.style.transform = '';
+      heroLeft.style.opacity = '';
+      heroRight.style.transform = '';
+      heroRight.style.opacity = '';
+      return;
+    }
+
     const scrollY = window.scrollY;
     const heroHeight = heroSection.offsetHeight || 600;
 
@@ -573,6 +582,19 @@ function initAboutScrollParallax() {
   if (!aboutLeft || !aboutRight || !aboutSection) return;
 
   window.addEventListener('scroll', () => {
+    // ── MOBILE: disable parallax completely ──
+    // On mobile (< 992px), the blur+translateX causes blurry cards and overflow
+    if (window.innerWidth < 992) {
+      // Reset any previously applied inline styles and bail out
+      aboutLeft.style.transform = '';
+      aboutLeft.style.opacity = '';
+      aboutLeft.style.filter = '';
+      aboutRight.style.transform = '';
+      aboutRight.style.opacity = '';
+      aboutRight.style.filter = '';
+      return;
+    }
+
     const scrollY = window.scrollY;
     const sectionTop = aboutSection.offsetTop;
     const sectionHeight = aboutSection.clientHeight;
@@ -620,6 +642,7 @@ function initAboutScrollParallax() {
     }
   });
 }
+
 
 /* ==========================================
    6.8. Timeline Scroll Animation (3D Reveal Cards + Glowing Track Progress)
