@@ -522,14 +522,9 @@ function initHeroScrollParallax() {
   heroRight.addEventListener('animationend', () => handleAnimationEnd(heroRight));
 
   window.addEventListener('scroll', () => {
-    // ── MOBILE: disable parallax, keep hero visible ──
+    // ── MOBILE: disable parallax ──
     if (window.innerWidth < 992) {
-      // After mobile-fade-up animation, ensure hero stays visible
-      heroLeft.style.opacity = '1';
-      heroLeft.style.transform = 'translateX(0)';
-      heroRight.style.opacity = '1';
-      heroRight.style.transform = 'translateX(0)';
-      return;
+      return; // Do nothing, let CSS animations play naturally
     }
 
     const scrollY = window.scrollY;
@@ -586,14 +581,7 @@ function initAboutScrollParallax() {
     // ── MOBILE: disable parallax completely ──
     // On mobile (< 992px), the blur+translateX causes blurry cards and overflow
     if (window.innerWidth < 992) {
-      // Explicitly set visible — empty string would revert to CSS opacity:0
-      aboutLeft.style.transform = 'translateX(0)';
-      aboutLeft.style.opacity = '1';
-      aboutLeft.style.filter = 'none';
-      aboutRight.style.transform = 'translateX(0)';
-      aboutRight.style.opacity = '1';
-      aboutRight.style.filter = 'none';
-      return;
+      return; // Do nothing, let CSS IntersectionObserver handle reveal animations
     }
 
     const scrollY = window.scrollY;
