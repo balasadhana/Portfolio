@@ -5197,3 +5197,85 @@ footer:hover .footer-divider-line {
     border-color: rgba(255, 255, 255, 0.1) !important;
   }
 }
+
+/* ============================================
+   CRITICAL MOBILE FIX v3
+   - Stop glow animations causing full blue flash
+   - Fix about text left cut-off
+   - Fix bento-resume-container layout
+   ============================================ */
+@media (max-width: 992px) {
+
+  /* ---- STOP all glow/float animations on mobile ---- */
+  /* These cause the "full blue screen" when scrolling */
+  .bento-resume-container,
+  .about-solo-image-card,
+  .cta-floating-container,
+  .about-floating-wrapper {
+    animation: none !important;
+  }
+
+  /* Remove the pulsing box-shadow glow on bento-resume-container */
+  .bento-resume-container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(109, 52, 228, 0.3) !important;
+    animation: none !important;
+  }
+
+  /* Remove glow animation on about card */
+  .about-solo-image-card {
+    animation: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  /* ---- Fix About section text left cut-off ---- */
+  /* The grid stacks to 1 column, but about-intro-col needs full width */
+  .about-sections-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .about-intro-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important; /* stop scroll-reveal horizontal shift from clipping */
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  /* Fix text to not overflow container */
+  .about-body-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-right: 0 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: none !important; /* hyphens can look weird, just wrap normally */
+  }
+
+  /* Bento resume container - full width, single column */
+  .bento-resume-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* bento cards full width on mobile */
+  .bento-card.bento-profile,
+  .bento-card.bento-skills {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100% !important;
+  }
+
+  /* Fix will-change on about col (causes stacking context / clipping) */
+  .about-intro-col {
+    will-change: auto !important;
+  }
+}
