@@ -524,10 +524,13 @@ function initHeroScrollParallax() {
   window.addEventListener('scroll', () => {
     // ── MOBILE: disable hero parallax ──
     if (window.innerWidth < 992) {
-      heroLeft.style.transform = '';
-      heroLeft.style.opacity = '';
-      heroRight.style.transform = '';
-      heroRight.style.opacity = '';
+      // Explicitly set visible — empty string would revert to CSS opacity:0
+      heroLeft.style.transform = 'translateX(0)';
+      heroLeft.style.opacity = '1';
+      heroLeft.style.animation = 'none';
+      heroRight.style.transform = 'translateX(0)';
+      heroRight.style.opacity = '1';
+      heroRight.style.animation = 'none';
       return;
     }
 
@@ -585,13 +588,13 @@ function initAboutScrollParallax() {
     // ── MOBILE: disable parallax completely ──
     // On mobile (< 992px), the blur+translateX causes blurry cards and overflow
     if (window.innerWidth < 992) {
-      // Reset any previously applied inline styles and bail out
-      aboutLeft.style.transform = '';
-      aboutLeft.style.opacity = '';
-      aboutLeft.style.filter = '';
-      aboutRight.style.transform = '';
-      aboutRight.style.opacity = '';
-      aboutRight.style.filter = '';
+      // Explicitly set visible — empty string would revert to CSS opacity:0
+      aboutLeft.style.transform = 'translateX(0)';
+      aboutLeft.style.opacity = '1';
+      aboutLeft.style.filter = 'none';
+      aboutRight.style.transform = 'translateX(0)';
+      aboutRight.style.opacity = '1';
+      aboutRight.style.filter = 'none';
       return;
     }
 

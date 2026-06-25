@@ -5450,4 +5450,23 @@ footer:hover .footer-divider-line {
     box-shadow: 0 0 20px rgba(137, 90, 245, 0.4) !important;
   }
 }
+
+/* ─────────────────────────────────────────────
+   MOBILE: Hero instantly visible (no animation)
+   Prevents blank screen when returning to top
+   ───────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .hero-reveal-left,
+  .hero-reveal-right {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    animation: none !important;
+  }
+
+  .nav-reveal-top {
+    opacity: 1 !important;
+    transform: translateX(-50%) !important;
+    animation: none !important;
+  }
+}
 
