@@ -1989,6 +1989,8 @@ button {
   padding: 0.125rem 0.4rem;
   border-radius: 4px;
   font-family: monospace;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .bento-tag-status .status-dot {
@@ -4776,10 +4778,11 @@ footer:hover .footer-divider-line {
 
   /* Navigation */
   .header-nav {
-    width: 95%;
+    width: auto;
+    max-width: 90%;
     top: 0.75rem;
-    padding: 0.4rem 0.5rem;
-    gap: 0.25rem;
+    padding: 0.4rem 1rem;
+    gap: 0.15rem;
   }
 
   .nav-link-item a {
@@ -4896,10 +4899,12 @@ footer:hover .footer-divider-line {
 /* --- Small Mobile (max 576px) --- */
 @media (max-width: 576px) {
 
-  /* Navigation: hide extra items, keep compact */
+  /* Navigation: compact pill on small mobile */
   .header-nav {
-    width: 98%;
+    width: auto;
+    max-width: 85%;
     top: 0.5rem;
+    padding: 0.35rem 0.85rem;
   }
 
   .nav-link-item a {
