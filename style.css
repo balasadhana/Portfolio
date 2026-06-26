@@ -133,6 +133,7 @@ button {
   z-index: 5000;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 0.5rem;
   padding: 0.5rem 0.75rem;
   background: var(--nav-bg);
@@ -151,8 +152,14 @@ button {
 .nav-links-list {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
   gap: 0.25rem;
   list-style: none;
+}
+
+.nav-link-item {
+  flex-shrink: 0;
 }
 
 .nav-link-item a {
@@ -163,6 +170,7 @@ button {
   color: var(--text-secondary);
   border-radius: 0.75rem;
   transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link-item a:hover {
@@ -4779,15 +4787,17 @@ footer:hover .footer-divider-line {
   /* Navigation */
   .header-nav {
     width: auto;
-    max-width: 90%;
+    max-width: 92%;
     top: 0.75rem;
     padding: 0.4rem 1rem;
-    gap: 0.15rem;
+    gap: 0.35rem;
+    flex-wrap: nowrap;
   }
 
   .nav-link-item a {
     padding: 0.4rem 0.6rem;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   /* Hero */
@@ -4902,14 +4912,16 @@ footer:hover .footer-divider-line {
   /* Navigation: compact pill on small mobile */
   .header-nav {
     width: auto;
-    max-width: 85%;
+    max-width: 90%;
     top: 0.5rem;
     padding: 0.35rem 0.85rem;
+    flex-wrap: nowrap;
   }
 
   .nav-link-item a {
     padding: 0.35rem 0.5rem;
     font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   /* Hero tweaks */
@@ -5026,6 +5038,7 @@ footer:hover .footer-divider-line {
   .nav-link-item a {
     padding: 0.3rem 0.4rem;
     font-size: 0.7rem;
+    white-space: nowrap;
   }
 
   .attributes-grid {
