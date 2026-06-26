@@ -577,22 +577,27 @@ function initAboutScrollParallax() {
 
   if (!aboutLeft || !aboutRight || !aboutSection) return;
 
-  window.addEventListener('scroll', () => {
+  const updateParallax = () => {
     // ── MOBILE: disable parallax completely ──
-    // On mobile (< 992px), the blur+translateX causes blurry cards and overflow
     if (window.innerWidth < 992) {
-      return; // Do nothing, let CSS IntersectionObserver handle reveal animations
+      aboutLeft.style.transform = '';
+      aboutLeft.style.opacity = '';
+      aboutLeft.style.filter = '';
+      aboutRight.style.transform = '';
+      aboutRight.style.opacity = '';
+      aboutRight.style.filter = '';
+      return;
     }
 
-    const scrollY = window.scrollY;
-    const sectionTop = aboutSection.offsetTop;
-    const sectionHeight = aboutSection.clientHeight;
-    
-    // We start the divide animation when the section starts exiting the viewport at the top
-    const startScroll = sectionTop - 100;
-    const endScroll = sectionTop + sectionHeight;
+    const rect = aboutSection.getBoundingClientRect();
+    const rectTop = rect.top;
+    const sectionHeight = rect.height;
 
-    if (scrollY < startScroll) {
+    // We start the divide animation when the section top exits the viewport by more than 100px
+    const startScrollThreshold = -100;
+    const endScrollThreshold = -sectionHeight;
+
+    if (rectTop > startScrollThreshold) {
       // Normal state: fully visible, no transform, scale, or blur overrides
       aboutLeft.style.transform = '';
       aboutLeft.style.opacity = '';
@@ -601,9 +606,10 @@ function initAboutScrollParallax() {
       aboutRight.style.transform = '';
       aboutRight.style.opacity = '';
       aboutRight.style.filter = '';
-    } else if (scrollY >= startScroll && scrollY <= endScroll) {
-      const range = endScroll - startScroll;
-      const progress = (scrollY - startScroll) / range; // 0 to 1
+    } else if (rectTop <= startScrollThreshold && rectTop >= endScrollThreshold) {
+      const range = sectionHeight + startScrollThreshold;
+      const currentDistance = startScrollThreshold - rectTop;
+      const progress = currentDistance / range;
 
       const translateAmount = progress * 150; // Slide distance (150px)
       const scaleAmount = 1 - (progress * 0.08); // Scale down slightly (to 0.92)
@@ -629,7 +635,13 @@ function initAboutScrollParallax() {
       aboutRight.style.opacity = '0';
       aboutRight.style.filter = 'blur(8px)';
     }
-  });
+  };
+
+  window.addEventListener('scroll', updateParallax);
+  window.addEventListener('resize', updateParallax);
+  
+  // Run immediately on initialization
+  updateParallax();
 }
 
 
@@ -688,13 +700,21 @@ function initTimelineScrollAnimation() {
       const entryThreshold = windowHeight - 80;
       const revealZone = 250; // Distance in px over which the transition unfolds
 
-      if (cardTop > entryThreshold) {
+      const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 50);
+
+      if (isAtBottom || cardTop <= entryThreshold - revealZone) {
+        // Fully revealed: clear inline styling to allow CSS hover translation to work
+        card.style.transform = '';
+        card.style.opacity = '1';
+        card.style.filter = 'none';
+        card.classList.add('revealed');
+      } else if (cardTop > entryThreshold) {
         // Below the reveal line: fully hidden/3D rotated
         card.style.transform = 'rotateX(10deg) translateY(30px) scale(0.96)';
         card.style.opacity = '0';
         card.style.filter = 'blur(4px)';
         card.classList.remove('revealed');
-      } else if (cardTop <= entryThreshold && cardTop > entryThreshold - revealZone) {
+      } else {
         // In the transition zone
         const delta = entryThreshold - cardTop;
         const progress = delta / revealZone; // 0 to 1
@@ -708,12 +728,6 @@ function initTimelineScrollAnimation() {
         card.style.opacity = progress.toString();
         card.style.filter = `blur(${blurVal}px)`;
         card.classList.remove('revealed');
-      } else {
-        // Fully revealed: clear inline styling to allow CSS hover translation to work
-        card.style.transform = '';
-        card.style.opacity = '1';
-        card.style.filter = 'none';
-        card.classList.add('revealed');
       }
     });
   };
@@ -740,12 +754,19 @@ function initProjectScrollAnimation() {
       const entryThreshold = windowHeight - 60;
       const revealZone = 260; // Progress range for scaling transition
 
-      if (cardTop > entryThreshold) {
+      const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 50);
+
+      if (isAtBottom || cardTop <= entryThreshold - revealZone) {
+        // Fully revealed: clear inline styling to let 3D hovers function
+        wrapper.style.transform = '';
+        wrapper.style.opacity = '1';
+        wrapper.style.filter = 'none';
+      } else if (cardTop > entryThreshold) {
         // Below viewport
         wrapper.style.transform = 'scale(0.85) translateY(45px)';
         wrapper.style.opacity = '0';
         wrapper.style.filter = 'blur(4px)';
-      } else if (cardTop <= entryThreshold && cardTop > entryThreshold - revealZone) {
+      } else {
         // Transitioning / Zooming in
         const delta = entryThreshold - cardTop;
         const progress = delta / revealZone; // 0 to 1
@@ -757,11 +778,6 @@ function initProjectScrollAnimation() {
         wrapper.style.transform = `scale(${scaleVal}) translateY(${translateYVal}px)`;
         wrapper.style.opacity = progress.toString();
         wrapper.style.filter = `blur(${blurVal}px)`;
-      } else {
-        // Fully revealed: clear inline styling to let 3D hovers function
-        wrapper.style.transform = '';
-        wrapper.style.opacity = '1';
-        wrapper.style.filter = 'none';
       }
     });
   };
@@ -773,32 +789,7 @@ function initProjectScrollAnimation() {
 /* ==========================================
    6.9.5. Project Details Modal Logic
    ========================================== */
-const projectDetailsData = {
-  studynotion: {
-    title: "StudyNotion EdTech",
-    type: "EdTech Platform",
-    desc: "StudyNotion is a fully functional, production-ready EdTech platform designed for online learning. It enables instructors to create, edit, and organize course tracks, video lessons, and curriculum details. Students can browse catalogs, enroll in courses, track progress, rate lessons, and manage their profiles.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Redux", "Razorpay"],
-    github: "https://github.com/balasadhana",
-    live: "https://github.com/balasadhana"
-  },
-  truewhisper: {
-    title: "True Whisper",
-    type: "Messaging Hub",
-    desc: "True Whisper is an anonymous feedback and messaging platform. Users can create a personal profile URL, share it across social networks to collect honest, candid feedback, and view incoming messages inside a secure dashboard with full privacy protection.",
-    tech: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS", "NextAuth.js", "React Hook Form"],
-    github: "https://github.com/balasadhana",
-    live: "https://github.com/balasadhana"
-  },
-  blogify: {
-    title: "Blogify Portal",
-    type: "Blogging Portal",
-    desc: "Blogify is a responsive blogging platform built for developers and writers. It features full Markdown writing support, instant previews, category/tag aggregations, a reading-time estimator, and an administrative dashboard to draft, edit, publish, or delete posts.",
-    tech: ["React", "Hono.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Cloudflare Workers"],
-    github: "https://github.com/balasadhana",
-    live: "https://github.com/balasadhana"
-  }
-};
+const projectDetailsData = {};
 
 function initProjectModal() {
   const modal = document.getElementById('project-detail-modal');

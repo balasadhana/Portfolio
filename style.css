@@ -121,6 +121,7 @@ button {
 .section-padding {
   padding: 2rem 0;
   position: relative;
+  scroll-margin-top: 6rem;
 }
 
 /* --- Navigation Header --- */
@@ -352,7 +353,7 @@ button {
   gap: 4rem;
   align-items: center;
   min-height: auto;
-  padding-top: 2rem;
+  padding-top: 12rem;
   padding-bottom: 4rem;
 }
 
@@ -661,6 +662,12 @@ button {
   margin-bottom: 4rem;
 }
 
+.about-heading-block {
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
 .heading-tagline {
   display: flex;
   align-items: center;
@@ -707,8 +714,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  will-change: transform, opacity, filter;
-  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: auto;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .about-title {
@@ -935,8 +942,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  will-change: transform, opacity, filter;
-  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: auto;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* --- Glassmorphism Card Face --- */
@@ -956,7 +963,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(109, 52, 228, 0.04), transparent 40%);
+  background: radial-gradient(450px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(109, 52, 228, 0.04), transparent 40%);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -2396,8 +2403,8 @@ button {
 .project-card-perspective-wrapper {
   perspective: 1000px;
   width: 100%;
-  will-change: transform, opacity, filter;
-  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: auto;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .project-premium-card {
@@ -3176,9 +3183,9 @@ button {
   top: var(--mouse-y, 0px);
   left: var(--mouse-x, 50%);
   transform: translate(-50%, -50%);
-  width: 45rem;
-  height: 45rem;
-  background: radial-gradient(circle, rgba(137, 90, 245, 0.15) 0%, transparent 65%);
+  width: 25rem;
+  height: 25rem;
+  background: radial-gradient(circle, rgba(137, 90, 245, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
   opacity: 0;
@@ -3188,6 +3195,10 @@ button {
 
 .cta-banner-wrapper:hover .cta-glow-spotlight {
   opacity: 1;
+}
+
+.cta-banner-wrapper:has(.contact-form-side:hover) .cta-glow-spotlight {
+  opacity: 0.2 !important;
 }
 
 .cta-tagline {
@@ -3211,12 +3222,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: rgba(10, 12, 16, 0.6);
+  background: #0b0c10;
   border: 1px solid var(--card-border);
   border-radius: 1.5rem;
   padding: 3rem;
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(109, 52, 228, 0.1);
   position: relative;
+  z-index: 5;
   overflow: hidden;
   transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
@@ -3231,7 +3243,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(800px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(109, 52, 228, 0.08), transparent 45%);
+  background: radial-gradient(400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(109, 52, 228, 0.05), transparent 50%);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -3325,7 +3337,7 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(137, 90, 245, 0.035), transparent 45%);
+  background: radial-gradient(400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(137, 90, 245, 0.035), transparent 45%);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -3434,12 +3446,13 @@ footer:hover .footer-divider-line {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: rgba(10, 12, 16, 0.6);
+  background: #0b0c10;
   border: 1px solid var(--card-border);
   border-radius: 1.5rem;
   padding: 3rem;
   box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(109, 52, 228, 0.1);
   position: relative;
+  z-index: 5;
   overflow: hidden;
   transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
@@ -3454,7 +3467,7 @@ footer:hover .footer-divider-line {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(800px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(109, 52, 228, 0.08), transparent 45%);
+  background: radial-gradient(400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(109, 52, 228, 0.05), transparent 50%);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -3988,7 +4001,7 @@ footer:hover .footer-divider-line {
   }
 
   .section-padding {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 }
 
@@ -4804,13 +4817,38 @@ footer:hover .footer-divider-line {
 
   /* CTA Banner */
   .cta-banner-wrapper {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.25rem;
+  }
+
+  /* Tighten section spacing on mobile */
+  .section-padding {
+    padding: 2rem 0;
+  }
+
+  /* Projects → CTA gap: push CTA down */
+  #contact.section-padding {
+    padding-top: 3rem;
+  }
+
+  /* Projects section: balanced bottom spacing */
+  #projects.section-padding {
+    padding-bottom: 2rem;
   }
 
   /* Project grid */
   .projects-showcase-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Projects → CTA gap: strong spacing */
+  #contact.section-padding {
+    padding-top: 0 !important;
+  }
+
+  #projects.section-padding {
+    padding-bottom: 0 !important;
   }
 
   /* Footer */
@@ -4899,7 +4937,7 @@ footer:hover .footer-divider-line {
 
   /* Section spacing */
   .section-padding {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   /* Tech console chips - make touch-friendly */
@@ -4914,8 +4952,17 @@ footer:hover .footer-divider-line {
 
   /* CTA */
   .cta-banner-wrapper {
-    padding: 2.5rem 1rem;
+    padding: 1.75rem 1rem;
     border-radius: 1rem;
+  }
+
+  /* Push CTA down on small mobile — handled by grid margin-bottom */
+  #contact.section-padding {
+    padding-top: 0 !important;
+  }
+
+  #projects.section-padding {
+    padding-bottom: 0 !important;
   }
 
   /* Modal CTAs */
@@ -5014,15 +5061,22 @@ footer:hover .footer-divider-line {
     padding: 0 0.5rem;
   }
 
-  /* Section heading left-align on mobile */
+  /* Keep section heading centered on mobile for consistency */
   .section-heading-block {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     padding: 0 0.5rem;
+    margin-top: 1.5rem;
   }
 
   .heading-tagline {
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .about-heading-block {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
 
   /* Bento card visibility fix — increase contrast on mobile */
@@ -5079,10 +5133,10 @@ footer:hover .footer-divider-line {
     hyphens: auto;
   }
 
-  /* Fix section heading - left align */
+  /* Fix section heading - centered */
   .section-heading-block {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   /* Fix about title */
@@ -5448,6 +5502,10 @@ footer:hover .footer-divider-line {
     height: 110px !important;
     margin: 0 auto 1rem !important;
     box-shadow: 0 0 20px rgba(137, 90, 245, 0.4) !important;
+  }
+
+  .contact-centered-wrapper {
+    margin-top: 2rem;
   }
 }
 
